@@ -1,52 +1,18 @@
-// pages/wxml/wxml.js
+// pages/demo/demo.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    nodes: [
-      {
-        name: 'img',
-        attrs: {
-          class: 'image',
-          src: 'https://raw.githubusercontent.com/ninghao/ninghao-images/master/weixin/app/demo-3.jpg'
-        }
-      },
-      {
-        name: 'h3',
-        attrs: {
-          class: 'header'
-        },
-        children: [
-          {
-            type: 'text',
-            text: 'hola~'
-          }
-        ]
-      }
-    ],
-    items: [
-      '中国',
-      '泰国',
-      '日本'
-    ],
-    pick: ['山东省','济南市','槐荫区']
+
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
-   formSubmit(event){
-     console.log(event.detail.value);
-   },
-   inputhandler(event) {
-     this.setData({
-       pick: event.detail.value
-     })
-     console.log(event.detail.value);
-   },
   onLoad: function (options) {
-
+    console.log(options);
   },
 
   /**
